@@ -14,6 +14,9 @@
 		011697252BB38348008B055A /* QuickLook_WebMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011697242BB38348008B055A /* QuickLook_WebMTests.swift */; };
 		0116972F2BB38348008B055A /* QuickLook_WebMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0116972E2BB38348008B055A /* QuickLook_WebMUITests.swift */; };
 		011697312BB38348008B055A /* QuickLook_WebMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011697302BB38348008B055A /* QuickLook_WebMUITestsLaunchTests.swift */; };
+		011697442BB3843B008B055A /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 011697432BB3843B008B055A /* Quartz.framework */; };
+		011697492BB3843B008B055A /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011697482BB3843B008B055A /* PreviewProvider.swift */; };
+		011697512BB3843B008B055A /* QuickLook Preview Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 011697412BB3843B008B055A /* QuickLook Preview Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +34,28 @@
 			remoteGlobalIDString = 0116970E2BB38347008B055A;
 			remoteInfo = "QuickLook WebM";
 		};
+		0116974F2BB3843B008B055A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 011697072BB38347008B055A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 011697402BB3843B008B055A;
+			remoteInfo = "QuickLook Preview Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		011697552BB3843B008B055A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				011697512BB3843B008B055A /* QuickLook Preview Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0116970F2BB38347008B055A /* QuickLook WebM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QuickLook WebM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +69,11 @@
 		0116972A2BB38348008B055A /* QuickLook WebMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "QuickLook WebMUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0116972E2BB38348008B055A /* QuickLook_WebMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLook_WebMUITests.swift; sourceTree = "<group>"; };
 		011697302BB38348008B055A /* QuickLook_WebMUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLook_WebMUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		011697412BB3843B008B055A /* QuickLook Preview Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "QuickLook Preview Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		011697432BB3843B008B055A /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		011697482BB3843B008B055A /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
+		0116974D2BB3843B008B055A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0116974E2BB3843B008B055A /* QuickLook_Preview_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QuickLook_Preview_Extension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +98,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0116973E2BB3843B008B055A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				011697442BB3843B008B055A /* Quartz.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +115,8 @@
 				011697112BB38347008B055A /* QuickLook WebM */,
 				011697232BB38348008B055A /* QuickLook WebMTests */,
 				0116972D2BB38348008B055A /* QuickLook WebMUITests */,
+				011697452BB3843B008B055A /* QuickLook Preview Extension */,
+				011697422BB3843B008B055A /* Frameworks */,
 				011697102BB38347008B055A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +127,7 @@
 				0116970F2BB38347008B055A /* QuickLook WebM.app */,
 				011697202BB38348008B055A /* QuickLook WebMTests.xctest */,
 				0116972A2BB38348008B055A /* QuickLook WebMUITests.xctest */,
+				011697412BB3843B008B055A /* QuickLook Preview Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,6 +169,24 @@
 			path = "QuickLook WebMUITests";
 			sourceTree = "<group>";
 		};
+		011697422BB3843B008B055A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				011697432BB3843B008B055A /* Quartz.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		011697452BB3843B008B055A /* QuickLook Preview Extension */ = {
+			isa = PBXGroup;
+			children = (
+				011697482BB3843B008B055A /* PreviewProvider.swift */,
+				0116974D2BB3843B008B055A /* Info.plist */,
+				0116974E2BB3843B008B055A /* QuickLook_Preview_Extension.entitlements */,
+			);
+			path = "QuickLook Preview Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,10 +197,12 @@
 				0116970B2BB38347008B055A /* Sources */,
 				0116970C2BB38347008B055A /* Frameworks */,
 				0116970D2BB38347008B055A /* Resources */,
+				011697552BB3843B008B055A /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				011697502BB3843B008B055A /* PBXTargetDependency */,
 			);
 			name = "QuickLook WebM";
 			productName = "QuickLook WebM";
@@ -185,6 +245,23 @@
 			productReference = 0116972A2BB38348008B055A /* QuickLook WebMUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		011697402BB3843B008B055A /* QuickLook Preview Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 011697522BB3843B008B055A /* Build configuration list for PBXNativeTarget "QuickLook Preview Extension" */;
+			buildPhases = (
+				0116973D2BB3843B008B055A /* Sources */,
+				0116973E2BB3843B008B055A /* Frameworks */,
+				0116973F2BB3843B008B055A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "QuickLook Preview Extension";
+			productName = "QuickLook Preview Extension";
+			productReference = 011697412BB3843B008B055A /* QuickLook Preview Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -206,6 +283,9 @@
 						CreatedOnToolsVersion = 15.3;
 						TestTargetID = 0116970E2BB38347008B055A;
 					};
+					011697402BB3843B008B055A = {
+						CreatedOnToolsVersion = 15.3;
+					};
 				};
 			};
 			buildConfigurationList = 0116970A2BB38347008B055A /* Build configuration list for PBXProject "QuickLook WebM" */;
@@ -224,6 +304,7 @@
 				0116970E2BB38347008B055A /* QuickLook WebM */,
 				0116971F2BB38348008B055A /* QuickLook WebMTests */,
 				011697292BB38348008B055A /* QuickLook WebMUITests */,
+				011697402BB3843B008B055A /* QuickLook Preview Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -246,6 +327,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		011697282BB38348008B055A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0116973F2BB3843B008B055A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -281,6 +369,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0116973D2BB3843B008B055A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				011697492BB3843B008B055A /* PreviewProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -293,6 +389,11 @@
 			isa = PBXTargetDependency;
 			target = 0116970E2BB38347008B055A /* QuickLook WebM */;
 			targetProxy = 0116972B2BB38348008B055A /* PBXContainerItemProxy */;
+		};
+		011697502BB3843B008B055A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 011697402BB3843B008B055A /* QuickLook Preview Extension */;
+			targetProxy = 0116974F2BB3843B008B055A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -418,6 +519,7 @@
 		011697352BB38348008B055A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "QuickLook WebM/QuickLook_WebM.entitlements";
@@ -429,6 +531,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -445,6 +548,7 @@
 		011697362BB38348008B055A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "QuickLook WebM/QuickLook_WebM.entitlements";
@@ -456,6 +560,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -541,6 +646,58 @@
 			};
 			name = Release;
 		};
+		011697532BB3843B008B055A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "QuickLook Preview Extension/QuickLook_Preview_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4M62XDHLLY;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "QuickLook Preview Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "QuickLook Preview Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "exgphe.QuickLook-WebM.QuickLook-Preview-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		011697542BB3843B008B055A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "QuickLook Preview Extension/QuickLook_Preview_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4M62XDHLLY;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "QuickLook Preview Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "QuickLook Preview Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "exgphe.QuickLook-WebM.QuickLook-Preview-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -576,6 +733,15 @@
 			buildConfigurations = (
 				0116973B2BB38348008B055A /* Debug */,
 				0116973C2BB38348008B055A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		011697522BB3843B008B055A /* Build configuration list for PBXNativeTarget "QuickLook Preview Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				011697532BB3843B008B055A /* Debug */,
+				011697542BB3843B008B055A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
