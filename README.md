@@ -1,6 +1,6 @@
 # QuickLook WebM
 
-This is a QuickLook Preview Extension that previews WebM video files.
+This is a QuickLook Preview Extension for macOS that previews WebM video files with near-native experience just like quicklooking MP4 or MOV videos.
 
 As the popular quicklook extension [QLVideo](https://github.com/Marginal/QLVideo) currently only displays static snapshots of videos, I decided to create a simple QuickLook extension that elaborates Safari's capability of playing WebM videos. By generating an HTML page that contains the video, QuickLook WebM is able to preview WebM videos dynamically with playback controls and HDR support.
 
