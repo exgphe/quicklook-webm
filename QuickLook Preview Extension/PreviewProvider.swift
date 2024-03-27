@@ -34,7 +34,7 @@ class PreviewProvider: QLPreviewProvider, QLPreviewingController {
                                                 
         let reply = QLPreviewReply(dataOfContentType: UTType.html, contentSize: CGSize(width: 1920, height: 1080)) { reply in
             
-            let videoFileData = try! Data(contentsOf: request.fileURL)
+            let videoFileData = try! Data(contentsOf: request.fileURL, options: .mappedIfSafe)
             
             reply.attachments["videoFile"] = QLPreviewReplyAttachment(data: videoFileData, contentType: UTType(importedAs: "org.webmproject.webm"))
 
